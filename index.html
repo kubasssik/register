@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="auth">
+            <form class="auth__form auth__form_login form__active" action="">
+                <h2>Вход</h2>
+                <label>
+                    <span class="auth__form_placeholder"></span>
+                    <input class="input__auth" type="text" placeholder="Имя">
+                    <span class="input__error">error</span>
+                </label>
+                <label>
+                    <div class="auth__form_input">
+                        <span class="auth__form_placeholder"></span>
+                        <input class="input__auth" type="password" autocomplete="on" placeholder="Пароль">
+                        <img class="auth__form_image" src="img/png/not-close.png" alt="no_img">
+                    </div>
+                    <span class="input__error">error</span>
+                </label>
+                <a href="">Забыли пароль?</a>
+                <div class="login__for_media">
+                    <a class="form__btn form__btn_login" href="">Вход</a>
+                    <p>или</p>
+                    <ul>
+                        <li><a href=""><img src="img/png/vk_logo.png" alt="vk"></a></li>
+                        <li><a href=""><img src="img/png/classmates_logo.png" alt="ok"></a></li>
+                        <li><a href=""><img src="img/png/yandex_logo.png" alt="yandex"></a></li>
+                        <li><a href=""><img src="img/png/whatsapp_logo.png" alt="wa"></a></li>
+                        <li><a href=""><img src="img/png/telegram_logo.png" alt="tg"></a></li>
+                        <li><a href=""><img src="img/png/viber_logo.png" alt="vb"></a></li>
+                    </ul>
+                </div>
+            </form>
+            <form class="auth__form auth__form_register form__none" action="">
+                <h2>Регистрация</h2>
+                <label>
+                    <span class="auth__form_placeholder"></span>
+                    <input class="input__auth" type="text" placeholder="Придумайте имя">
+                    <span class="input__error">error</span>
+                </label>
+                <label>
+                    <span class="auth__form_placeholder"></span>
+                    <input class="input__auth" type="email" placeholder="email">
+                    <span class="input__error">error</span>
+                </label>
+                <label>
+                    <div class="auth__form_input">
+                        <span class="auth__form_placeholder"></span>
+                        <input class="input__auth" type="password" autocomplete="on" placeholder="Придумайте пароль">
+                        <img class="auth__form_image" src="img/png/not-close.png" alt="no_img">
+                    </div>
+                    <span class="input__error">error</span>
+                </label>
+                <label>
+                    <div class="auth__form_input">
+                        <span class="auth__form_placeholder"></span>
+                        <input class="input__auth" type="password" autocomplete="on" placeholder="Повторите пароль">
+                        <img class="auth__form_image" src="img/png/not-close.png" alt="no_img">
+                    </div>
+                    <span class="input__error">error</span>
+                </label>
+                <label class="auth__label_checkbox">
+                    <p>Я cогласен(на) с правилами сайта:<a href=""> Правила сайта</a></p>
+                    <input class="checkbox" type="checkbox">
+                    <span class="fake__checkbox"></span>
+                    <span class="input__error">error</span>
+                </label>
+                <label class="auth__label_checkbox">
+                    <p>Я cогласен(на) с политекой безопасности :<a href=""> Политика безопасности</a></p>
+                    <input class="checkbox" type="checkbox">
+                    <span class="fake__checkbox"></span>
+                    <span class="input__error">error</span>
+                </label>
+                <a class="form__btn form__btn_register" href="">Регистрация</a>
+            </form>
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <button class="boxes__btn">Пройти регистрацию</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

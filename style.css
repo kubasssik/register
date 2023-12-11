@@ -1,0 +1,239 @@
+.container {
+    width: 100%;
+}
+
+.auth {
+   
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100cqw;
+    height: 100cqh;
+
+}
+.login__for_media{
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr;
+    gap: 1rem;
+    z-index: 10;
+    width: 50%;
+    padding: .3rem;
+   
+    
+}
+.login__for_media p{
+    justify-self:center;
+    align-self: center;
+}
+.login__for_media ul{
+    display: grid;
+    grid-template-columns: repeat(3 , 2rem);
+    gap: .5rem;
+}
+.login__for_media ul li img{
+  
+    width: 100%;
+}
+
+
+
+.auth__form {
+    width: 90%;
+    display: grid;
+    gap: 1rem;
+    padding: .3rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    border-radius: .3rem;
+    position: absolute;
+    transition: 1s;
+    z-index: 10;
+}
+
+.auth__form_login {
+    background: rgb(23, 206, 160);
+}
+
+.auth__form_register {
+    background: rgb(12, 130, 199);
+}
+
+.form__active {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__none {
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.auth__form h2 {
+    color: white;
+    font-weight: bold;
+}
+.auth__form label{
+    position: relative;
+}
+.auth__form_input{
+  position: relative;
+}
+.auth__form_image{
+    cursor: pointer;
+    position: absolute;
+    width: 2rem;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    
+  }
+
+.input__auth {
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+}
+.auth__form_placeholder{
+    position: absolute;
+    top:-.5rem;
+    left: 50%;
+    background-color: white;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    font-size: .7rem;
+    display: none;
+}
+
+.input__error{
+    color: red;
+    font-weight: 600;
+    font-size:.8rem;
+    letter-spacing: .1rem;
+    display: none;
+}  
+.form__btn {
+    margin: auto;
+    background-color: var(--blue-white);
+    color: white;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.form__btn_login {
+    background-color: rgb(12, 130, 199);
+}
+
+.form__btn_register {
+    background-color: rgb(23, 206, 160);
+}
+
+.boxes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: .5rem;
+    padding: .5rem;
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    box-shadow: 0 0 .1rem 0rem black;
+    border-radius: .3rem;
+    transition: 1s;
+}
+
+.box:nth-child(even) {
+    background: linear-gradient(75deg, white, rgb(23, 206, 160));
+}
+
+.box:nth-child(odd) {
+    background: linear-gradient(75deg, rgb(12, 130, 199), white);
+}
+
+.box__active_even {
+    transform: rotateY(-180deg);
+}
+
+.box__active_odd {
+    transform: rotateY(180deg);
+}
+
+.auth__label_checkbox{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    
+}
+.auth__label_checkbox p{
+    font-size: .8rem;
+}
+.auth__label_checkbox a{
+    color: blue;
+    font-size: .8rem;
+}
+
+.auth__label_checkbox input{
+    display: none;
+ }
+
+.boxes__btn {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgb(12, 130, 199);
+    color: white;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    border-radius: .3rem;
+    z-index: 10;
+}
+
+
+
+/*Стилизация checkbox */
+.fake__checkbox {
+    box-shadow: 0 0 .1rem 0rem black;
+    display: inline-block;
+    width: 3.2rem;
+    height: 1.7rem;
+    background-color: rgb(124, 124, 124);
+	border-radius: 1rem;
+    position: relative;
+	top: -.1rem;
+	cursor: pointer;
+}
+
+.fake__checkbox::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+	border: .05rem solid rgb(124, 124, 124);
+	border-radius: 1rem;
+    background: rgb(255, 255, 255);
+    top: .15rem;
+    left: .2rem;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake__checkbox::before {
+	left: 1.6rem;
+	border: .05rem solid varrgb(23, 206, 160);
+}
+
+.checkbox:checked + .fake__checkbox{
+	background: rgb(23, 206, 160);
+}
+

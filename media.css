@@ -1,0 +1,40 @@
+@media (min-width: 320px) {
+    .auth__form {
+        padding: .5rem;
+    }
+
+    .input__auth {
+        font-size: 1.5rem;
+    }
+
+    .boxes__btn {
+
+        font-size: 1.5rem;
+    }
+    .login__for_media ul{
+      
+        grid-template-columns: repeat(3 , 3rem);
+      
+    }
+}
+
+
+@media (min-width: 520px) {
+    .auth {
+        width: 30rem;
+        height: 40rem;
+        overflow: hidden;
+    }
+
+    .input__auth {
+
+        padding: .3rem, 51rem;
+        border-radius: .3rem;
+        font-size: 1rem;
+    }
+
+    .input__error {
+        font-size: 1.1rem;
+    }
+    
+}
